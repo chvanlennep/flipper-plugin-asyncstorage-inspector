@@ -9,7 +9,7 @@ import {
 } from "flipper-plugin";
 import { Button, Typography } from "antd";
 
-type Incoming = [string, string][];
+type Incoming = [string, string | null][];
 
 type Events = {
   init: { content: Incoming };
@@ -23,11 +23,11 @@ type Commands = {
 
 type Data = { key: string; value: any };
 
-const parseJSON = (string: string) => {
+const parseJSON = (input: string | null) => {
   try {
-    return JSON.parse(string);
+    return JSON.parse(input as string);
   } catch {
-    return string;
+    return input;
   }
 };
 
@@ -81,7 +81,6 @@ export function Component() {
 
   const syncCallback = () => {
     setSyncLoading(true);
-
     setTimeout(() => {
       instance.sync();
       setSyncLoading(false);
