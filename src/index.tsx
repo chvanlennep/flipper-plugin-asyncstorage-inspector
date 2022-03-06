@@ -81,16 +81,17 @@ export function Component() {
 
   const syncCallback = () => {
     setSyncLoading(true);
-    instance.sync();
+
     setTimeout(() => {
+      instance.sync();
       setSyncLoading(false);
     }, 1000);
   };
 
   const clearCallback = async (): Promise<true> => {
     setClearLoading(true);
-    instance.clearStorage();
     setTimeout(() => {
+      instance.clearStorage();
       setClearLoading(false);
     }, 1000);
     return true;
