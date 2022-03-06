@@ -24,7 +24,7 @@ initAsyncStorageInspector();
 3. Install [flipper-plugin-asyncstorage-inspector](https://github.com/chvanlennep/flipper-plugin-asyncstorage-inspector) in your Flipper desktop client:
 
 ```
-Manage Plugins > Install Plugins > search "flipper-plugin-asyncstorage-inspector" > Install
+Manage Plugins > Install Plugins > search "asyncstorage-inspector" > Install
 ```
 
 4. Restart flipper with your React Native App running and you should be able to see the plugin as 'AsyncStorage Inspector'.
