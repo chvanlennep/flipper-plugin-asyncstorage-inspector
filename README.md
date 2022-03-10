@@ -7,7 +7,7 @@ Flipper plugin for inspecting contents of AsyncStorage in React Native
 1. Install [async-storage-inspector-flipper](https://github.com/chvanlennep/asyncstorage-inspector-flipper) middleware and `react-native-flipper` in your React Native app:
 
 ```bash
-yarn add async-storage-inspector-flipper react-native-flipper
+yarn add asyncstorage-inspector-flipper react-native-flipper
 # for iOS
 cd ios && pod install
 ```
